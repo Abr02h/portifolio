@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfólio de Abreu</title>
+</head>
+<body>
+    <nav>
+        <a href="sobrem.html">Sobre Mim</a>
+        <a href="projetos.html">Projectos</a>
+        <a href="contactos.html">Contacto</a>
+    </nav>
+
+    <header>
+        <img src="img/per.jpg" class="header-img">
+        <div class="header-text">
+            <h1>Abreu Adriano</h1>
+            <p>"Os sonhos se tornam realidade 
+                quando o desejo os transforma em ação 
+                concreta."</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+        <section id="about">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Sou Abreu Adriano Simbe Chale, um iniciante em programação com interesse em Programacão Web. Estou atualmente aprendendo HTML, CSS, Javascript e estou empolgado para construir e aprimorar minhas habilidades.</p>
+        </section>
+        
+        <section id="projects">
+            <h2>Projectos</h2>
+            <div class="project">
+                <h3>Projecto 01</h3>
+                <h4>Leitura Livre</h4>
+                <p><strong>Descrição:</strong> Desenvolvi um Site para que as pessoas possam baixar livros gratuitamente, trabalhei para reunir uma coleção diversificada de livros em diferentes gêneros e idiomas, permitindo que pessoas de todo o mundo explorem novos mundos através das páginas de um livro.</p>
+                <p><strong>Tecnologias:</strong> usei apenas HTML, CSS, e Javascript.</p>
+                <p><strong>Links:</strong> <a href="abr02h.github.io//ll/" target="_blank">Ver Projecto</a></p>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p><strong>Email:</strong> <a href="mailto:abreuchale210@gmail.com">abreuchale210@gmail.com</a></p>
+        </section>
+    </div>
+    </main>
+    
+    <footer>
+        <p>&copy;2024 Abreu Adriano.</p>
+    </footer>
+    
+    <script>
+        // Função para rolagem suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
